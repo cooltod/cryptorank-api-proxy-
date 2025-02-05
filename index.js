@@ -26,7 +26,7 @@ app.get("/airdrops", async (req, res) => {
 // Fetch News
 app.get("/news", async (req, res) => {
     try {
-        let response = await fetch(`https://api.cryptorank.io/v1/news?api_key=${API_KEY}`);
+        let response = await fetch(`(`https://cryptorank-api-proxy.vercel.app=${API_KEY}`);}`);
         let data = await response.json();
         res.json(data);
     } catch (error) {
